@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wap</title>
+</head>
+<body>
+	<form>
+		password:<input type="password" id="pwd">
+		password:<input type="password" id="pwd1">
+		<input type="button" value="submit" onclick="abc()">
+		<p id="demo"></p>
+	</form>
+
+</body>
+<script>
+	function abc(){
+		var n=document.getElementById("pwd").value;
+		var a=document.getElementById("pwd1").value;
+
+		if(n.length==""){
+			document.getElementById("demo").innerHTML="please Fill Field";
+
+		}
+		else if(n.length<5)
+		{
+			document.getElementById("demo").innerHTML="5 charsd";
+		}
+		else if(n.length>10)
+		{
+			document.getElementById("demo").innerHTML="10 charsd";
+		}
+
+	 else if(n!=a)
+	 {
+		document.getElementById("demo").innerHTML="no match";
+
+
+	}
+	else
+	{
+		
+			document.getElementById("demo").innerHTML="match";
+		
+	}
+	}
+	
+       
+
+	
+</script>
+</html>
